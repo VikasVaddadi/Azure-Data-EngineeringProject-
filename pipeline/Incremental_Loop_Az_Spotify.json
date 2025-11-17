@@ -185,11 +185,11 @@
 												"parameters": {
 													"container": "bronze",
 													"Folder": {
-														"value": "@pipeline().parameters.Table",
+														"value": "@item().Table",
 														"type": "Expression"
 													},
 													"File": {
-														"value": "@concat(pipeline().parameters.Table, '_', variables('Current'))",
+														"value": "@concat(item().Table, '_', variables('Current'))",
 														"type": "Expression"
 													}
 												}
