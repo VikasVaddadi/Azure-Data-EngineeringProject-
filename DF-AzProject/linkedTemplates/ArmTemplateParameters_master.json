@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "DF-AzProject"
+		},
+		"AzureSqlDatabase_password": {
+			"value": ""
+		},
+		"LS_AzureDLS_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "azureprojectserver-01.database.windows.net"
+		},
+		"AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "azureprojectsqldb"
+		},
+		"AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "adminvikas"
+		},
+		"LS_AzureDLS_properties_typeProperties_url": {
+			"value": "https://storageeazproject.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
