@@ -8,6 +8,11 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.loop_input",
+						"type": "Expression"
+					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "AzureSQL_to_ADLS",
@@ -268,7 +273,7 @@
 												"parameters": {
 													"Container": "bronze",
 													"Folder": {
-														"value": "@{pipeline().parameters.Table}_cdc",
+														"value": "@{item().Table}_cdc",
 														"type": "Expression"
 													},
 													"File": "cdc.json"
